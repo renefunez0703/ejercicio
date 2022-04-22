@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+int main(int argc, char** argv){
+
+   int i=0, voto1 =0, voto2 =0, voto3 =0, voto4 =0, voto =0;
+   string prom1 =0, prom2 =0, prom3 =0, prom4 =0;
+   cout<<"Ingrese los votos: ", cin>>i;
+
+   for(int j =1; j<=i; j=j+1)
+   {
+       cout<<"Inghrese su voto: ", cin >> voto;
+       cout<<endl;
+
+       if(voto ==1){
+           voto1 = voto1 +1;
+           prom1=(voto1*100)/i;
+
+       }else{
+           if(voto ==2){
+               voto2 = voto2 +1;
+               prom2=(voto2*100)/i;
+
+           }else{
+               if(voto ==3){
+               voto3 = voto3 +1;
+               prom3 =(voto3*100)/i;
+               }
+
+               
+                   if(voto ==4){
+                     voto4 = voto4 +1;
+                    prom4= (voto4*100)/i;
+                   }
+                   
+           }
+       }
+   }
+
+       
+           
+       cout<<"Cantidad de votos para el candidato 1: "<<voto1<<endl;
+       cout<<"Este es el promedio del candidato: "<<prom1<<endl;
+        cout<<"Cantidad de votos para el candidato 2: "<<voto2<<endl;
+             cout<<"Este es el promedio del candidato: "<<prom2<<endl;
+         cout<<"Cantidad de votos para el candidato 3: "<<voto3<<endl;
+              cout<<"Este es el promedio del candidato: "<<prom3<<endl;
+         cout<<"Cantidad de votos para el candidato4: "<<voto4<<endl;
+              cout<<"Este es el promedio del candidato: "<<prom4<<endl;
+        
+
+         return 0;
+
+   
+   }
+
+
+
+
+
+
+
